@@ -1,0 +1,147 @@
+@import "normalize_reset.css";
+
+body {
+
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    color: dimgray;
+}
+
+.main_title, .recipe_title{
+    padding: .5em;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: xxx-large;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#main_header {
+    position: relative;
+    min-width: 100%;
+    height: 300px;
+    background-image: url("../images/kitchen.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.header_img {
+    position: absolute;
+    max-height: 300px;
+}
+
+.body_wrapper {
+    flex-direction: column;
+    padding: 10px;
+    display: flex;
+    max-width: 80%;
+}
+.recipe_wrapper{
+    flex-direction: row;
+    padding: 10px;
+    display: flex;
+    max-width: 80%;
+}
+.index_links_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.index_recipe_link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: dimgray 1px solid;
+    margin-bottom: 1.5em;
+    opacity: 0.75;
+    transition-duration: 0.7s;
+
+
+}
+
+.index_recipe_link:hover {
+    background-color: white;
+    opacity: 1;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+.index_recipe_title {
+    font-size: medium;
+    color: antiquewhite;
+    text-align: center;
+    position: absolute;
+    top: 3px;
+}
+
+
+.recipe_title {
+    text-align: center;
+
+}
+.recipe_title:before{
+
+    font-size: xxx-large;
+    color: burlywood;
+
+}
+
+.recipe_img {
+;background-size: cover;background-position: center; min-width: 650px; min-height: 650px
+}
+
+.recipe_description {
+}
+.recipe_info{
+    padding-left: 1em;
+}
+
+.ingredients_list {
+}
+
+.ingredient {
+}
+
+.step {
+}
+
+#bento, #chili, #breadcrumb {
+    min-height: 300px;
+    min-width: 300px;
+    background-size: cover;
+    background-position: left 0;
+}
+
+#bento {
+    background-image: url("../images/bento.jpeg");
+}
+
+#chili {
+    background-image: url("../images/chilli-image.jpg");
+}
+
+#breadcrumb {
+    background-image: url("../images/apple-crumble.webp");
+}
